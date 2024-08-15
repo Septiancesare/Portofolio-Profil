@@ -1,6 +1,10 @@
 import React from "react";
 
 const Navbar = () => {
+  const handleScroll = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="navbar bg-black/50 backdrop-blur-md sticky top-0 z-50">
@@ -30,7 +34,7 @@ const Navbar = () => {
                 <a>Home</a>
               </li>
               <li>
-                <a>Education</a>
+                <a>Academic</a>
               </li>
               <li>
                 <a>Skills</a>
@@ -39,7 +43,9 @@ const Navbar = () => {
                 <a>Portfolio</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#contact" onClick={() => handleScroll("contact")}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -54,7 +60,9 @@ const Navbar = () => {
               <a>Home</a>
             </li>
             <li className="text-cyan-500 rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
-              <a>Education</a>
+              <a href="#academic" onClick={() => handleScroll("academic")}>
+                Academic
+              </a>
             </li>
             <li className="text-cyan-500 rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
               <a>Skills</a>
@@ -63,7 +71,9 @@ const Navbar = () => {
               <a>Portfolio</a>
             </li>
             <li className="text-cyan-500  rounded-lg mx-2 hover:bg-cyan-500 hover:text-indigo-950">
-              <a>Contact</a>
+              <a href="#contact" onClick={() => handleScroll("contact")}>
+                Contact
+              </a>
             </li>
           </ul>
         </div>

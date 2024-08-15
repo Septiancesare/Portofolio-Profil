@@ -1,4 +1,5 @@
 import "./App.css";
+import Academic from "./Components/Academic/Academic";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navigation/Navbar";
@@ -11,6 +12,7 @@ function App() {
       <div>
         <Navbar />
         <Hero />
+        <Academic />
         <Footer />
       </div>
     </>
