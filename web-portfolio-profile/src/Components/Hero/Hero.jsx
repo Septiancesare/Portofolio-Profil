@@ -6,10 +6,25 @@ const Hero = () => {
       <div className="hero relative bg-hero-pattern  min-h-screen">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="hero-content flex-col gap-8 lg:flex-row relative z-10">
-          <img
-            src="..\src\assets\image\profpict tian 720.jpg"
-            className="max-w-96 max-h-96 max-md:max-w-64 rounded-lg shadow-2xl"
-          />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="..\src\assets\image\profpict tian 720.jpg"
+                  alt="Profile Picture"
+                  class="profile-pic"
+                />
+              </div>
+              <div class="flip-card-back p-2 ">
+                <p className="font-bold text-lg">Septian Cesare Arden</p>
+                <div className="divider divider-accent"></div>
+                <p>Sebelas Maret University</p>
+                <p>Informatic Engineering Education</p>
+                <p>septiancesare@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
           <div className="text-slate-300 ">
             <h1 className="text-7xl max-md:text-5xl max-md:flex justify-center font-bold py-2">
               Hello everyone!!
@@ -32,8 +47,8 @@ const Hero = () => {
               programmer who stays current with tech trends and contributes to
               the industry's growth.
             </p>
-            <div className="max-md:flex justify-center">
-              <button className="btn bg-cyan-300 text-blue-950 hover:text-cyan-200 hover:outline hover:outline-teal-400 ">
+            <div className="flex max-md:flex justify-center">
+              <button className="btn hover:bg-cyan-300 hover:text-blue-950 hover:outline-none text-cyan-200 outline outline-teal-400 ">
                 Get Started
               </button>
             </div>

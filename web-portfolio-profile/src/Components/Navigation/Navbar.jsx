@@ -56,21 +56,21 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-md">
-            <li className="text-cyan-500 rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
+            <li className="text-cyan-500 rounded-lg mx-2  hover:glow-navbar">
               <a>Home</a>
             </li>
-            <li className="text-cyan-500 rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
+            <li className="text-cyan-500 rounded-lg mx-2 hover:glow-navbar">
               <a href="#academic" onClick={() => handleScroll("academic")}>
                 Academic
               </a>
             </li>
-            <li className="text-cyan-500 rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
+            <li className="text-cyan-500 rounded-lg mx-2  hover:glow-navbar">
               <a>Skills</a>
             </li>
-            <li className="text-cyan-500  rounded-lg mx-2  hover:bg-cyan-500 hover:text-indigo-950">
+            <li className="text-cyan-500  rounded-lg mx-2  hover:glow-navbar">
               <a>Portfolio</a>
             </li>
-            <li className="text-cyan-500  rounded-lg mx-2 hover:bg-cyan-500 hover:text-indigo-950">
+            <li className="text-cyan-500  rounded-lg mx-2 hover:glow-navbar">
               <a href="#contact" onClick={() => handleScroll("contact")}>
                 Contact
               </a>
