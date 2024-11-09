@@ -1,10 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
   return (
     <>
       <div className="hero relative bg-hero-pattern  min-h-screen">
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="hero-content flex-col gap-8 lg:flex-row relative z-10">
           <div class="flip-card">
             <div class="flip-card-inner">

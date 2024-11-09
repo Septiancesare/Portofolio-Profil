@@ -1,10 +1,10 @@
+import Skills from "./Components/Skills/Skills";
 import "./App.css";
 import Academic from "./Components/Academic/Academic";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navigation/Navbar";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
@@ -13,6 +13,8 @@ function App() {
         <Navbar />
         <Hero />
         <Academic />
+        <Skills />
+
         <Footer />
       </div>
     </>
